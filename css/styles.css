@@ -42,6 +42,12 @@ img {
   height: auto;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* base styles */
 body {
   font-family: "Roboto", sans-serif;
@@ -98,6 +104,13 @@ body {
   padding: 24px 0;
 }
 
+.nav-list:hover::after {
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  background-color: var(--pressed-state);
+}
+
 .logo-name {
   color: var(--hero-background);
 }
@@ -142,6 +155,9 @@ body {
 .main-banner {
   background: var(--hero-background);
   padding: 188px 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
+  background-position: center;
 }
 
 .banner-title {
@@ -152,6 +168,7 @@ body {
   text-align: center;
   color: var(--color-background);
   max-width: 496px;
+  padding-bottom: 48px;
 }
 
 .button {
@@ -169,9 +186,15 @@ body {
   border-radius: 4px;
 }
 
+.banner-title,
+.button {
+  margin: 0 auto;
+}
+
 .button:hover,
 .button:focus {
   background-color: var(--pressed-state);
+  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* section 2 main feature*/
@@ -213,6 +236,28 @@ body {
   width: calc((100% - 24px * 3) / 4);
 }
 
+.feature-icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 24px 100px;
+  border: 1px solid var(--light-slate);
+  background: var(--light-slate);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/icons.svg#icon-antenna"),
+    url("../images/icons.svg#icon-clock"),
+    url("../images/icons.svg#icon-diagram"),
+    url("../images/icons.svg#icon-astronaut");
+  border-radius: 4px;
+  margin: 0 auto;
+  background-position: center;
+}
+
 .title {
   font-weight: 500;
   font-size: 20px;
@@ -242,19 +287,36 @@ body {
 
 .container-teem-list {
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  flex-basis: calc((100% - 24px * 3) / 4);
 }
 
 .team-list {
   background-color: var(--color-background);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: var(--color-background);
 }
 
 .container-team-title {
   border-radius: 0px 0px 4px 4px;
   padding: 32px 0;
   border: 1px solid var(--cornflower);
+}
+
+.container-time-icon {
+  padding: 8;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.time-icon {
+  padding: 12px 12px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 100%;
+  background: var(--primary-brand);
 }
 
 /* section 4 portfolio */
@@ -271,7 +333,15 @@ body {
   row-gap: 48px;
 }
 
-.portfolio-list {
+.container-portfolio-list {
+}
+
+.portfolio-list:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+. .portfolio-list {
   width: calc((100% - 24px * 2) / 3);
 }
 
