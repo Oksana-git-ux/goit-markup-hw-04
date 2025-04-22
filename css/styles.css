@@ -273,15 +273,9 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
-  padding: 24px 100px;
   border: 1px solid var(--light-slate);
   background: var(--light-slate);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image:
     url("../images/icons.svg#icon-antenna"),
     url("../images/icons.svg#icon-clock"),
     url("../images/icons.svg#icon-diagram"),
@@ -339,8 +333,6 @@ body {
 }
 
 .container-time-icon {
-  display: flex;
-  padding: 8;
   display: flex;
   justify-content: center;
   gap: 24px;
