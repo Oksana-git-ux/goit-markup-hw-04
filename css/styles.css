@@ -166,12 +166,15 @@ body {
 .main-banner {
   background: var(--hero-background);
   padding: 188px 0;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/people-office.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover; 
+  background-position: center;
+  background-size: cover;
 }
 
 .banner-title {
@@ -198,7 +201,7 @@ body {
   height: 56px;
   border: none;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .banner-title,
@@ -252,14 +255,14 @@ body {
 }
 
 .container-feature-icon {
- display: flex; 
- align-items: center;
- justify-content: center; 
- height: 112px; 
- background-color: var(--cloud); 
- border-radius: 4px;
- border: 1px solid var(--light-slate); 
- margin-bottom: 8px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--cloud);
+  border-radius: 4px;
+  border: 1px solid var(--light-slate);
+  margin-bottom: 8px;
 }
 
 .feature-icon {
@@ -323,40 +326,39 @@ body {
 
 .team-icon-list {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 24px;
 }
 
 .team-link-icon {
- width: 40px;
- height: 40px;
- align-items: center; 
- background-color: var(--primary-brand);
- border-radius: 50%;
- transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--primary-brand);
 }
 
 .link {
   width: 100%;
-  height: 100%,
+  height: 100%;
+  border-radius: 50%;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
-  
-  
+  background-color: var(--primary-brand);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link:hover,
-.link:focus {
-  background-color: var(--pressed-state); 
+.team-link-icon:hover,
+.team-link-icon:focus {
+  background-color: var(--pressed-state);
 }
 
 .team-icon {
-  border-radius: 100%;
-  max-width: 100%;
-  height: auto;
-  background: var(--primary-brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   fill: var(--cloud);
 }
 
@@ -395,7 +397,7 @@ body {
 
 .portfolio-picture {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .portfolio-picture-paragraf {
@@ -403,18 +405,17 @@ body {
   background-color: var(--primary-brand);
   color: var(--cloud);
   font-size: 16px;
-  line-height: 1.5; 
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  position: absolute; 
+  position: absolute;
   top: 0;
   height: 100%;
   width: 100%;
-  transform: translatey(100%); 
+  transform: translatey(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-picture:hover
-.portfolio-picture-paragraf {
+.portfolio-picture:hover .portfolio-picture-paragraf {
   transform: translateY(0%);
 }
 
@@ -425,7 +426,6 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--body-text);
-  
 }
 
 /* footer */
@@ -467,44 +467,43 @@ body {
 }
 
 .social-media-title {
-
 }
 
 .footer-social-media {
- display: flex; 
- font-weight: 500;
- font-size: 16px;
- line-height: 1.5;
- letter-spacing: 0.02em;
- color: var(--color-background);
- margin-bottom: 16px;
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-background);
+  margin-bottom: 16px;
 }
 
 .footer-social-icon {
-
 }
 
-.footer-icon-list{
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 16px;
- 
- 
+.footer-icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .footer-link-icon {
- width: 40px;
- height: 40px;
- align-items: center;
- border-radius: 50%;
- background-color: var(--primary-brand);
- transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--primary-brand);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link {
- width: 100%;
- height: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-link-icon:hover,
@@ -513,10 +512,8 @@ body {
 }
 
 .footer-icon {
- display: flex;
- align-items: center;
- justify-content: center;
- fill: var(--cloud);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--cloud);
 }
-
-
