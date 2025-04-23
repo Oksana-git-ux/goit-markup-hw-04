@@ -497,16 +497,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-brand);
+  border-radius: 50%;
 }
 
 .footer-link-icon:hover,
-.footer-link {
+.footer-link:hover {
   background-color: var(--success);
 }
 
 .footer-link-icon:focus,
-.footer-link {
+.footer-link:focus {
   background-color: var(--success);
 }
 
