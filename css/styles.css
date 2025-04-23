@@ -465,9 +465,6 @@ body {
   max-width: 264px;
 }
 
-.social-media-title {
-}
-
 .footer-social-media {
   display: flex;
   font-weight: 500;
@@ -476,9 +473,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-background);
   margin-bottom: 16px;
-}
-
-.footer-social-icon {
 }
 
 .footer-icon-list {
@@ -494,6 +488,7 @@ body {
   align-items: center;
   border-radius: 50%;
   background-color: var(--primary-brand);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link {
@@ -502,13 +497,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--primary-brand);
 }
 
-.footer-link-icon:hover {
+.footer-link-icon:hover,
+.footer-link {
   background-color: var(--success);
 }
 
-.footer-link-icon:focus {
+.footer-link-icon:focus,
+.footer-link {
   background-color: var(--success);
 }
 
@@ -517,5 +515,4 @@ body {
   align-items: center;
   justify-content: center;
   fill: var(--cloud);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
